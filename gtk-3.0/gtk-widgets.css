@@ -444,7 +444,7 @@ GtkHTML {
 * calendar *
 ************/
 GtkCalendar {
-    padding: 4px;
+    padding: 1px;
     outline-offset: -1px;
 }
 
