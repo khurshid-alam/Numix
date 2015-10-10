@@ -27,6 +27,15 @@
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
+/* For Ambience Scrollbar */
+@define-color backdrop_fg_color mix (@bg_color, @fg_color, 0.8);
+@define-color backdrop_text_color mix (@base_color, @text_color, 0.8);
+@define-color backdrop_dark_fg_color mix (@dark_bg_color, @dark_fg_color, 0.75);
+@define-color backdrop_selected_bg_color shade (@bg_color, 0.92);
+@define-color backdrop_selected_fg_color @fg_color;
+@define-color backdrop_filling_bg #F9F9F9;
+@define-color scrollbar_track_color #F9F9F9;
+
 /* shadow effects */
 @define-color light_shadow #fff;
 @define-color dark_shadow #000;
