@@ -1735,7 +1735,7 @@ GtkLevelBar.vertical {
 .scrollbar.trough {
     border-width: 0;
     border-radius: 0;
-    background-color: #F9F9F9;
+    background-color: @theme_bg_color;
     background-image: none;
 }
 
