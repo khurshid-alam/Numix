@@ -1951,6 +1951,34 @@ GtkComboBox .separator {
     border-width: 0;
 }
 
+/******
+! Paned
+*******/
+GtkPaned {
+  -GtkPaned-handle-size: 1;
+  -gtk-icon-source: none;
+  margin: 0 3px; }
+
+GtkPaned:dir(rtl) {
+  margin-right: 0;
+  margin-left: 3px; }
+
+GtkPaned .pane-separator {
+  background-color: #c8c8c8; }
+
+GtkPaned.wide {
+  -GtkPaned-handle-size: 4;
+  margin: 0; }
+
+GtkPaned.wide .pane-separator {
+  background-color: transparent;
+  border-style: none solid;
+  border-color: #c8c8c8;
+  border-width: 1px; }
+
+GtkPaned.wide.vertical .pane-separator {
+  border-style: solid none; }
+
 /**************
  * spinbutton *
  **************/
