@@ -2055,6 +2055,12 @@ GtkComboBox .separator {
     border-width: 0;
 }
 
+.sidebar-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 /******
 ! Paned
 *******/
