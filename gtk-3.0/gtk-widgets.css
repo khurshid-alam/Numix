@@ -4121,7 +4121,8 @@ GtkBubbleWindow .toolbar {
                 0 0 0 1px mix(shade(@toolbar_bg_color, 0.7), @toolbar_fg_color, 0.21);*/
 
     /* this is used for the resize cursor area */
-    margin: 0px;
+    background-color: @toolbar_bg_color;
+    margin: 1px;
 }
 
 .window-frame:backdrop {
@@ -4130,6 +4131,13 @@ GtkBubbleWindow .toolbar {
 
 .window-frame.tiled {
     border-radius: 0;
+}
+
+.window-frame.solid-csd {
+    border-radius: 2px 2px 0 0;
+    margin: 1px;
+    background-color: @toolbar_bg_color;;
+    box-shadow: none; 
 }
 
 .window-frame.csd.popup {
