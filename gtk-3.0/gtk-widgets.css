@@ -3412,6 +3412,50 @@ GtkTreeView row:nth-child(odd) {
     background-color: #F2F3F1;
 }
 
+GtkTreeView .progressbar {
+    background-color: @selected_bg_color;
+    background-image: none;
+    border: 1px solid shade(@selected_bg_color, 0.80); 
+}
+
+GtkTreeView .progressbar:selected:focus, GtkTreeView .progressbar:selected {
+      background-color: @selected_bg_color;
+      background-image: none;
+      border: 1px solid shade(@selected_bg_color, 0.75);
+      color: @selected_fg_color; 
+}
+
+GtkTreeView .progressbar:selected:backdrop {
+}
+
+GtkTreeView .progressbar:insensitive:insensitive {
+      background-color: @bg_color;
+      background-image: none;
+      border-color: shade(@bg_color, 0.85); 
+}
+
+GtkTreeView .progressbar:backdrop {
+      background-color: @bg_color;
+      background-image: none;
+      border-color: shade(@bg_color, 0.85); 
+}
+
+GtkTreeView .trough {
+    background-color: mix(@bg_color, @base_color, 0.5);
+    border: 1px solid shade(@base_color, 0.80); 
+}
+
+GtkTreeView .trough:selected:focus, GtkTreeView .trough:selected {
+      background-color: @base_color;
+      border: 1px solid shade(@bg_color, 0.75);
+      color: @text_color; 
+}
+
+GtkTreeView .trough:insensitive:insensitive {
+      background-color: @base_color; 
+}
+
+
 /************
  * viewport *
  ************/
