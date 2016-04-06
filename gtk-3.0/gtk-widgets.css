@@ -1200,7 +1200,7 @@ GtkPopover .frame {
 
 GtkPopover .entry {
     border-color: mix(@theme_bg_color, @theme_fg_color, 0.12);
-    background-color: @theme_bg_color;
+    background-color: @theme_base_color;
     background-image: none;
     color: @theme_fg_color;
 }
